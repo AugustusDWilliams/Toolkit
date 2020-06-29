@@ -31,6 +31,14 @@ def execution_time(func):
 
     return timed
 
+def timethis(func):
+    def wrapper(*args, **kwargs):
+        start = time()
+        res = func(*args,**kwargs)
+        end = time()
+        print('%s.%s: %f' % (func.__module__, func.__name__, end-start))
+        return res
+    return wrapper
 
 @execution_time
 def repeat(number, n_repeats=30000):
@@ -47,9 +55,15 @@ class Example:
     def __init__(self):
         super().__init__()
 
-    @logtime
+    @timethis
     def sample_func(self):
         print("This is a sample class function")
+
+    @timethis
+    def countdown(self, n):
+        while n > 0:
+            n -= 1
+        return "Finished"
 
 
 if __name__ == "__main__":
@@ -59,3 +73,4 @@ if __name__ == "__main__":
     # sample_time_func()
     example = Example()
     example.sample_func()
+    example.countdown(1000000)
