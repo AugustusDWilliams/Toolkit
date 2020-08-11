@@ -1,5 +1,7 @@
 # Snippets
 
+* [Decorators](Decorators/README.md)
+* [Loggers](Loggers/README.md)
 * [Custom Exceptions](custom_exceptions.py)
 * [Data Utils](data_utils.py)
 * [Date Utils](date_utils.py)
