@@ -1,0 +1,32 @@
+{
+	"Author Into": {
+		"prefix": ".author",
+		"body": [
+			"__author__ = \"Daniel A. Williams II. (Augustus.D.Williams@gmail.com)\"",
+			"__title__ = \"$1\"",
+			"__version__ = \"$2\""
+		]
+	},
+    "Class Function Group": {
+        "scope": "python",
+        "prefix": "cg",
+        "body": [
+            "# ---------------------$1 Functions------------------------------------"],
+        "description": "Designated a group of related functions inside of a class"
+    },
+    "Super Class": {
+        "scope": "python",
+        "prefix": "super",
+        "body": [
+            "super().__init__()"
+        ]
+    },
+    "Exception as err": {
+        "scope": "python",
+        "prefix": "ex",
+        "body": [
+            "except Exception as err:\n\t"
+        ],
+        "description": "Except Statement"
+    },
+}

@@ -5,7 +5,7 @@
 * Capitalized Repo Name and Directory Names
 * Local Repo on new Windows Development Computer now
 
-## Version 0.1.1 -
+## Version 0.1.1 - [08-11-2020]
 ### Added
 - Version Badge to README
 - Languages Badges to README
@@ -16,3 +16,17 @@
 
 ### Removed
 - Shortcuts Folder
+
+## Version 0.1.2 -
+### Added
+- virtualenvs.md to Stacks directory
+- Added Images directory to Cheatsheets directory
+- Added Markdowm directory to Cheatsheets directory
+
+### Changed
+- Fixed missing date of Version 0.1.1 Commit
+- Moved files in Cheatsheets directory into appropiate subdirectory
+
+### Removed
+- Deleted requirements.txt
+- Deleted .DS_Store
